@@ -23,10 +23,10 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t seu-usuario/meu-pipeline-cicd:latest .
+        run: docker build -t gabex25/meu-pipeline-cicd:latest .
 
       - name: Push Docker image
-        run: docker push seu-usuario/meu-pipeline-cicd:latest
+        run: docker push gabex25/meu-pipeline-cicd:latest
 
   deploy:
     runs-on: ubuntu-latest
